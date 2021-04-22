@@ -1,6 +1,18 @@
 ## Windows Shortcut Menu Generator
 
-This is a simple batch script to automatically build a shortcut directory for a collection of portable apps.
+This is a quick and dirty batch script to automatically build a shortcut directory for a collection of portable apps.
+
+## Explanation and Howto
+
+- edit **settings.cfg**
+- all sub-directories of **appDir** will be scanned for **taskMenu.cfg** files
+- the **taskMenu.cfg** should contain one or more lines of link definitions "name to display:relative\path\executable.exe"
+- all links will be generated in the **menuDir**
+- you may add the **menuDir** now in your task bar and trigger the script on demand
+
+## Acknowledgment
+
+This contains a copy of the Nirsoft nircmd app (https://www.nirsoft.net/utils/nircmd.html)
 
 ## Copyright & License
 
