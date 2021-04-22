@@ -4,7 +4,7 @@ This is a quick and dirty batch script to automatically build a shortcut directo
 
 ## Explanation and Howto
 
-- edit **settings.cfg**
+- copy **settings.cfg.dist** to **settings.cfg** and edit it
 - all sub-directories of **appDir** will be scanned for **taskMenu.cfg** files
 - the **taskMenu.cfg** should contain one or more lines of link definitions "name to display:relative\path\executable.exe"
 - all links will be generated in the **menuDir**
