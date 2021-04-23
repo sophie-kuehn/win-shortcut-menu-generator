@@ -3,7 +3,7 @@ set "currentDir=%~dp0"
 
 for /f "delims=: tokens=1,2" %%G in (%currentDir%settings.cfg) do set %%G=%currentDir%%%H
 
-FOR %%s IN (%menuDir%*) DO del "%%s"
+FOR %%s IN (%menuDir%*.lnk) DO del "%%s"
 
 FOR /D %%s IN (%appDir%\*) DO (
     IF EXIST %%s\taskMenu.cfg (
